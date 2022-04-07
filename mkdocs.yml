@@ -1,5 +1,43 @@
-site_name: My Docs
+site_name: Telegramia
+site_url: https://telegramia.com/
+site_description: Telegramia is a Telegram client for Windows, Mac, Linux, and Android. It's a free and open source project, and it's supported by the Telegram Foundation.
+site_author: mezgoodle
+copyright: © 2022 mezgoodle
+nav:
+  - Home: index.md
+  - About: about.md
+  - Telegramia group: docs.md
+  - Telegramia: telegramia.md
+  - Telegramia API: api.md
+  - Telegramia Stats: stats.md
+  - Telegramia Site: site.md
 theme:
   name: material
-  pallete:
-    primary: blue
+  locale: en
+  palette:
+    - scheme: default
+      primary: pink
+      accent: red
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: purple
+      accent: deep purple
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Roboto
+  language: en
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+  icon:
+    repo: fontawesome/brands/github
+repo_name: mezgoodle/TelegramiaSite
+repo_url: https://github.com/mezgoodle/TelegramiaSite
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences

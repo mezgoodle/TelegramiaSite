@@ -5,8 +5,7 @@ site_author: mezgoodle
 copyright: © 2022 mezgoodle
 nav:
   - Home: index.md
-  - About: about.md
-  - Telegramia group: docs.md
+  - Telegramia group: group.md
   - Telegramia: telegramia.md
   - Telegramia API: api.md
   - Telegramia Stats: stats.md

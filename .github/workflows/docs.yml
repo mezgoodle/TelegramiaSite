@@ -1,0 +1,25 @@
+name: Deploy documentation
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    # Install mkdocs and build the page
+    - name: Build
+      run: |
+        sudo apt-get install python3-setuptools
+        python3 -m pip install mkdocs mkdocs-material
+        python3 -m mkdocs build
+    # Deploy to the gh-branch using the GITHUB_TOKEN.
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.TOKEN }}
+        publish_dir: ./site
+        publish_branch: site  # deploying branch

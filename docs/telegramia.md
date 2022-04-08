@@ -6,8 +6,9 @@ The bot is written in [Python](https://www.python.org/) with the library [aiogra
 
 For interactions with the database I used [motor](https://motor.readthedocs.io/en/stable/). It's a great library for working with databases. It's a good choice for a project with a lot of data. MongoDB is a great choice for a database.
 
-## Screenshots
+## Manual
 
+## Screenshots
 
 ## Installation
 
@@ -15,7 +16,6 @@ For interactions with the database I used [motor](https://motor.readthedocs.io/e
 pip install aiogram
 pip install motor
 ```
-
 
 ## Usage
 
@@ -37,8 +37,6 @@ if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
 ```
 
-
 ## License
-
 
 ## Contacts

@@ -6,10 +6,19 @@ copyright: © 2022 mezgoodle
 nav:
   - Home: index.md
   - Telegramia group: group.md
-  - Telegramia: telegramia.md
-  - Telegramia API: api.md
-  - Telegramia Stats: stats.md
-  - Telegramia Site: site.md
+  - Telegramia:
+      - Introduction: telegramia/index.md
+      - Manual: telegramia/manual.md
+      - Technical detail: telegramia/technical.md
+  - Telegramia API:
+      - Introduction: api/index.md
+      - Technical detail: api/technical.md
+  - Telegramia Stats:
+      - Introduction: stats/index.md
+      - Technical detail: stats/technical.md
+  - Telegramia Site:
+      - Introduction: site/index.md
+      - Technical detail: site/technical.md
 theme:
   name: material
   locale: en

@@ -36,4 +36,22 @@ After the registration, you will receive a message with information about the ci
 
 > You can delete your account at any time by sending a message to the bot with the command /delete.
 
+## City
+
+You can visit any city object by clicking the buttons in the keyboard. There you can increase your level, stats, buy items.
+
+### Example
+
+Visiting the market:
+
+![Market image](../images/market.png)
+
+## Roads
+
+Roads are the main way to go to other cities or objects. It takes your energy to travel, which you can restore in the tavern.
+
+### Example
+
+![Roads image](../images/roads.png)
+
 

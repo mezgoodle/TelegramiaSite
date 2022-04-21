@@ -54,4 +54,20 @@ Roads are the main way to go to other cities or objects. It takes your energy to
 
 ![Roads image](../images/roads.png)
 
+## Characteristics
+
+There are four characteristics of your character: strength, agility, intelligence and intuition. As you can see on the image:
+
+![Characteristics image](../images/characteristics.png)
+
+They are based on the class you have chosen and have limits on your level.
+
+You can increase your characteristics by visiting different objects.
+
+### Example
+
+Increase your intelligence:
+
+![Increase intelligence image](../images/increase_intelligence.png)
+
 

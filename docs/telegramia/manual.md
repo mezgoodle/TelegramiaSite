@@ -70,4 +70,11 @@ Increase your intelligence:
 
 ![Increase intelligence image](../images/increase_intelligence.png)
 
+## Mounts
+
+These horses are the main means of transportation. You can ride them to go to other cities or objects. In game logic, you spend less energy to travel. You can buy them in the menagerie.
+
+### Example
+
+![Mounts image](../images/mounts.png)
 

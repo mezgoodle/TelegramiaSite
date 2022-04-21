@@ -78,3 +78,24 @@ These horses are the main means of transportation. You can ride them to go to ot
 
 ![Mounts image](../images/mounts.png)
 
+## Dungeons
+
+This is the place where you can find the monsters. You can fight them and get rewards.
+
+![Dungeons image](../images/dungeon.png)
+
+Here you can get the information about the dungeon, the rewards, the damage and how much time it needs to be completed.
+
+![Dungeons image](../images/dungeon_information.png)
+
+After entering the dungeon, you  need to wait the time to complete it. While you are in the dungeon, you cannot travel.
+
+![Dungeons image](../images/dungeon_entering.png)
+
+## Raids
+
+Raids are similar to dungeons, but they are more difficult, because they have more levels to complete.
+
+![Raids image](../images/raid.png)
+
+Here you can also get the information about the raid, the rewards, the damage and how much time it needs to be completed.

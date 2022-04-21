@@ -99,3 +99,13 @@ Raids are similar to dungeons, but they are more difficult, because they have mo
 ![Raids image](../images/raid.png)
 
 Here you can also get the information about the raid, the rewards, the damage and how much time it needs to be completed.
+
+![Raids image](../images/raid_information.png)
+
+You can also get the information about the next raid level at any time.
+
+![Raids image](../images/raid_next_level.png)
+
+After completing all the levels, you will see these messages:
+
+![Raids image](../images/raid_finish.png)

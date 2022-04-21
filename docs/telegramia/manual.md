@@ -46,6 +46,8 @@ Visiting the market:
 
 ![Market image](../images/market.png)
 
+> Items help you to increase your stats.
+
 ## Roads
 
 Roads are the main way to go to other cities or objects. It takes your energy to travel, which you can restore in the tavern.

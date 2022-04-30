@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://telegramia.com/telegramia/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.11">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.120efc48.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.8c5ef100.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.9647289d.min.css">
@@ -349,22 +349,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#screenshots" class="md-nav__link">
-    Screenshots
+  <a href="#screenshot" class="md-nav__link">
+    Screenshot
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
+  <a href="#how-to-play" class="md-nav__link">
+    How to play?
   </a>
   
 </li>
@@ -666,22 +659,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#screenshots" class="md-nav__link">
-    Screenshots
+  <a href="#screenshot" class="md-nav__link">
+    Screenshot
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
+  <a href="#how-to-play" class="md-nav__link">
+    How to play?
   </a>
   
 </li>
@@ -720,34 +706,24 @@
 
 <h1 id="telegramia">Telegramia</h1>
 <h2 id="overview">Overview</h2>
+<p>It's a text-based game in Telegram in RPG style. Here you can improve your character, fight monsters, and explore the
+world. Now there is not any interaction with other players, but in the future there will be.</p>
+<p>Game looks like a simple bot in Telegram. You can send commands to it and it will do the rest. So it's not difficult at
+all to play.</p>
 <h2 id="technical-details">Technical details</h2>
 <p>More about technical details read <a href="technical/">here</a>.</p>
 <h2 id="manual">Manual</h2>
 <p>Read the full manual <a href="manual/">here</a>.</p>
-<h2 id="screenshots">Screenshots</h2>
-<h2 id="installation">Installation</h2>
-<div class="highlight"><pre><span></span><code>pip install aiogram
-pip install motor
-</code></pre></div>
-<h2 id="usage">Usage</h2>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">aiogram</span>
-<span class="kn">from</span> <span class="nn">aiogram</span> <span class="kn">import</span> <span class="n">Bot</span><span class="p">,</span> <span class="n">Dispatcher</span><span class="p">,</span> <span class="n">executor</span><span class="p">,</span> <span class="n">types</span>
-
-
-<span class="n">bot</span> <span class="o">=</span> <span class="n">Bot</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s2">&quot;YOUR_TOKEN&quot;</span><span class="p">)</span>
-<span class="n">dp</span> <span class="o">=</span> <span class="n">Dispatcher</span><span class="p">(</span><span class="n">bot</span><span class="p">)</span>
-
-
-<span class="nd">@dp</span><span class="o">.</span><span class="n">message_handler</span><span class="p">(</span><span class="n">commands</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;start&quot;</span><span class="p">])</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">cmd_start</span><span class="p">(</span><span class="n">message</span><span class="p">:</span> <span class="n">types</span><span class="o">.</span><span class="n">Message</span><span class="p">):</span>
-    <span class="k">await</span> <span class="n">message</span><span class="o">.</span><span class="n">reply</span><span class="p">(</span><span class="s2">&quot;Hi!&quot;</span><span class="p">)</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <span class="n">executor</span><span class="o">.</span><span class="n">start_polling</span><span class="p">(</span><span class="n">dp</span><span class="p">,</span> <span class="n">skip_updates</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</code></pre></div>
+<h2 id="screenshot">Screenshot</h2>
+<p><img alt="First screenshot" src="../images/screenshot_1.png" /></p>
+<h2 id="how-to-play">How to play?</h2>
+<p>Just open this <a href="https://t.me/teliarpg_bot">link</a> and type <code>/start</code> command.</p>
 <h2 id="license">License</h2>
+<p><a href="https://github.com/mezidia/Telegramia/blob/main/LICENSE">MIT license</a></p>
 <h2 id="contacts">Contacts</h2>
+<ul>
+<li><a href="https://t.me/sylvenis">Author's Telegram</a></li>
+</ul>
 
               
             </article>
@@ -825,7 +801,7 @@ pip install motor
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.expand", "navigation.top"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.6e54b5cd.min.js"></script>
+      <script src="../assets/javascripts/bundle.748e2769.min.js"></script>
       
     
   </body>

@@ -2,6 +2,12 @@
 
 ## Overview
 
+It's a text-based game in Telegram in RPG style. Here you can improve your character, fight monsters, and explore the
+world. Now there is not any interaction with other players, but in the future there will be.
+
+Game looks like a simple bot in Telegram. You can send commands to it and it will do the rest. So it's not difficult at
+all to play.
+
 ## Technical details
 
 More about technical details read [here](technical.md).
@@ -10,35 +16,18 @@ More about technical details read [here](technical.md).
 
 Read the full manual [here](manual.md).
 
-## Screenshots
+## Screenshot
 
-## Installation
+![First screenshot](../images/screenshot_1.png)
 
-```bash
-pip install aiogram
-pip install motor
-```
+## How to play?
 
-## Usage
-
-```python
-import aiogram
-from aiogram import Bot, Dispatcher, executor, types
-
-
-bot = Bot(token="YOUR_TOKEN")
-dp = Dispatcher(bot)
-
-
-@dp.message_handler(commands=["start"])
-async def cmd_start(message: types.Message):
-    await message.reply("Hi!")
-
-
-if __name__ == "__main__":
-    executor.start_polling(dp, skip_updates=True)
-```
+Just open this [link](https://t.me/teliarpg_bot) and type `/start` command.
 
 ## License
 
+[MIT license](https://github.com/mezidia/Telegramia/blob/main/LICENSE)
+
 ## Contacts
+
+- [Author's Telegram](https://t.me/sylvenis)

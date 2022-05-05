@@ -16,7 +16,7 @@ More about technical details read [here](technical.md).
 ## How to use?
 
 - For reading: just visit the site [here](https://telegramia-api.herokuapp.com/docs).
-- For using: make requests in your language, for example in javascript:
+- For using: make requests in your language, for example in **javascript**:
 
 ```javascript
 const axios = require('axios');
@@ -87,7 +87,7 @@ Response:
 
 ## License
 
-[MIT license](https://github.com/mezidia/Telegramia/blob/main/LICENSE)
+[MIT license](https://github.com/mezgoodle/Telegramia-API/blob/master/LICENSE)
 
 ## Contacts
 

@@ -4,7 +4,7 @@
 
 This site represents the RESTFul API of **Telegramia** data. Here you can find the documentation of all the available
 methods. As unregistered users you can only get the information. But if you will be an administrator of the bot in the future, you can change the data with POST and PUT methods.
-
+ 
 ## Technical details
 
 More about technical details read [here](technical.md).

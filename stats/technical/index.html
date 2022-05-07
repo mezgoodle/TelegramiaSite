@@ -68,6 +68,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#technical-details" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -451,10 +456,50 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Technical detail
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Technical detail
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#libraries" class="md-nav__link">
+    Libraries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -503,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../site/index.md" class="md-nav__link">
+      <a href="../../site/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -517,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../site/technical.md" class="md-nav__link">
+      <a href="../../site/technical/" class="md-nav__link">
         Technical detail
       </a>
     </li>
@@ -548,6 +593,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#libraries" class="md-nav__link">
+    Libraries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -565,9 +634,36 @@
 
 
 
-  <h1>Technical detail</h1>
-
-
+<h1 id="technical-details">Technical details</h1>
+<h2 id="libraries">Libraries</h2>
+<p>I have used here the common libraries such as: <a href="https://numpy.org/">numpy</a>, <a href="https://pandas.pydata.org/">pandas</a>
+and <a href="https://seaborn.pydata.org/">seaborn</a>.</p>
+<p>I get data from Telegramia-API by <a href="">requests</a> as <code>json</code> and convert it into <code>dataframe</code>.</p>
+<h2 id="installation">Installation</h2>
+<p>If you want to contribute to the project, you need to know how to install the dependencies, launch the bot and etc.</p>
+<ul>
+<li>Clone the project</li>
+</ul>
+<div class="highlight"><pre><span></span><code>git clone https://github.com/mezgoodle/Telegramia-API.git
+</code></pre></div>
+<ul>
+<li>Install the dependencies</li>
+</ul>
+<div class="highlight"><pre><span></span><code>pip install -r requirements.txt
+</code></pre></div>
+<ul>
+<li>
+<p>Set the environment variables in <a href="https://github.com/mezgoodle/Telegramia-API/blob/master/config.py">config.py</a></p>
+</li>
+<li>
+<p>Run the development server</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code>uvicorn app:app --reload --port <span class="m">8000</span>
+</code></pre></div>
+<ul>
+<li>Open the <a href="http://localhost:8000/">local web page</a></li>
+</ul>
 
               
             </article>
@@ -600,6 +696,21 @@
           </div>
         </a>
       
+      
+        
+        <a href="../../site/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Introduction
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
       
     </nav>
   

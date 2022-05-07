@@ -2,10 +2,12 @@
 
 ## Libraries
 
-I have used here the common libraries such as: [numpy](https://numpy.org/), [pandas](https://pandas.pydata.org/)
-and [seaborn](https://seaborn.pydata.org/).
+The site is written in [Python](https://www.python.org/) with the library [FastAPI](https://fastapi.tiangolo.com/). The
+source code is available [here](https://github.com/mezgoodle/Telegramia-API). It was my first project with FastAPI and I
+fell in love with it. Now I am using it in my projects.
 
-I get data from Telegramia-API by [requests]() as `json` and convert it into `dataframe`.
+For interactions with the database I used [motor](https://motor.readthedocs.io/). It's a great library for
+working with databases and also is asynchronous. It's a good choice for a project with a lot of data. MongoDB is a great choice for a database.
 
 ## Installation
 

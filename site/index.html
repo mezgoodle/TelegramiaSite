@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#telegramia-api" class="md-skip">
+        <a href="#telegramiasite" class="md-skip">
           Skip to content
         </a>
       
@@ -690,80 +690,15 @@
 
 
 
-<h1 id="telegramia-api">Telegramia-API</h1>
+<h1 id="telegramiasite">TelegramiaSite</h1>
 <h2 id="overview">Overview</h2>
-<p>This site represents the RESTFul API of <strong>Telegramia</strong> data. Here you can find the documentation of all the available
-methods. As unregistered users you can only get the information. But if you will be an administrator of the bot in the future, you can change the data with POST and PUT methods.</p>
+<p>On the site you can find all the documentation for the Telegramia group projects.</p>
 <h2 id="technical-details">Technical details</h2>
 <p>More about technical details read <a href="technical/">here</a>.</p>
 <h2 id="screenshot">Screenshot</h2>
-<p><img alt="screenshot" src="../images/api.png" /></p>
+<p><img alt="screenshot" src="../images/site.png" /></p>
 <h2 id="how-to-use">How to use?</h2>
-<ul>
-<li>For reading: just visit the site <a href="https://telegramia-api.herokuapp.com/docs">here</a>.</li>
-<li>For using: make requests in your language, for example in <strong>javascript</strong>:</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">axios</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;axios&#39;</span><span class="p">);</span><span class="w"></span>
-
-<span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">getCities</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;https://telegramia-api.herokuapp.com/cities&#39;</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">getCities</span><span class="p">().</span><span class="nx">data</span><span class="p">);</span><span class="w"></span>
-</code></pre></div>
-<p>Response:</p>
-<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="w"></span>
-<span class="w">  </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="err">_id</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mi">61459129</span><span class="err">c</span><span class="mi">55</span><span class="err">a</span><span class="mi">7</span><span class="err">cbb</span><span class="mi">8</span><span class="kc">f</span><span class="mf">7623e</span><span class="kc">f</span><span class="err">&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="kc">na</span><span class="err">me</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;Брісвель&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">cou</span><span class="kc">ntr</span><span class="err">y</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;Пріаріа&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">is_capi</span><span class="kc">tal</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">marke</span><span class="kc">t</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">academy</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="kc">te</span><span class="err">mple</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="kc">ta</span><span class="err">ver</span><span class="kc">n</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">me</span><span class="kc">na</span><span class="err">gerie</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
-<span class="w">  </span><span class="p">},</span><span class="w"></span>
-<span class="w">  </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="err">_id</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mi">6246</span><span class="err">ba</span><span class="mf">916e1</span><span class="kc">f</span><span class="err">ced</span><span class="mi">7</span><span class="err">a</span><span class="mf">92e4</span><span class="err">b</span><span class="mf">4e</span><span class="err">&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="kc">na</span><span class="err">me</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;Вайфстел&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">cou</span><span class="kc">ntr</span><span class="err">y</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;Асмон&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">is_capi</span><span class="kc">tal</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">marke</span><span class="kc">t</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">academy</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="kc">te</span><span class="err">mple</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="kc">ta</span><span class="err">ver</span><span class="kc">n</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">me</span><span class="kc">na</span><span class="err">gerie</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
-<span class="w">  </span><span class="p">},</span><span class="w"></span>
-<span class="w">  </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="err">_id</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mi">6246</span><span class="err">baa</span><span class="mf">46e1</span><span class="kc">f</span><span class="err">ced</span><span class="mi">7</span><span class="err">a</span><span class="mf">92e4</span><span class="err">b</span><span class="mi">4</span><span class="kc">f</span><span class="err">&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="kc">na</span><span class="err">me</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;Белсон&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">cou</span><span class="kc">ntr</span><span class="err">y</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;Браудал&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">is_capi</span><span class="kc">tal</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">marke</span><span class="kc">t</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">academy</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="kc">te</span><span class="err">mple</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="kc">ta</span><span class="err">ver</span><span class="kc">n</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">me</span><span class="kc">na</span><span class="err">gerie</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
-<span class="w">  </span><span class="p">},</span><span class="w"></span>
-<span class="w">  </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="err">_id</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mi">6246</span><span class="err">bab</span><span class="mi">866</span><span class="kc">f</span><span class="mi">0553</span><span class="err">cc</span><span class="mi">69</span><span class="err">d</span><span class="mi">9</span><span class="err">bcc&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="kc">na</span><span class="err">me</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;Хоул</span><span class="w"> </span><span class="err">Чиппинг&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">cou</span><span class="kc">ntr</span><span class="err">y</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;Естіл&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">is_capi</span><span class="kc">tal</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">marke</span><span class="kc">t</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">academy</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="kc">te</span><span class="err">mple</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="kc">ta</span><span class="err">ver</span><span class="kc">n</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="err">me</span><span class="kc">na</span><span class="err">gerie</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="p">]</span><span class="w"></span>
-</code></pre></div>
+<p>Just open the <a href="https://mezgoodle.github.io/TelegramiaSite/">link</a>.</p>
 <h2 id="license">License</h2>
 <p><a href="https://github.com/mezgoodle/Telegramia-API/blob/master/LICENSE">MIT license</a></p>
 <h2 id="contacts">Contacts</h2>

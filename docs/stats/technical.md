@@ -14,21 +14,17 @@ If you want to contribute to the project, you need to know how to install the de
 - Clone the project
 
 ```bash
-git clone https://github.com/mezgoodle/Telegramia-API.git
+git clone https://github.com/mezgoodle/TelegramiaStats.git
 ```
 
-- Install the dependencies
+- Install the Juptyer notebook:
 
 ```bash
-pip install -r requirements.txt
+pip install notebook
 ```
 
-- Set the environment variables in [config.py](https://github.com/mezgoodle/Telegramia-API/blob/master/config.py)
-
-- Run the development server
+- Run the notebook
 
 ```bash
-uvicorn app:app --reload --port 8000
+jupyter notebook
 ```
-
-- Open the [local web page](http://localhost:8000/)

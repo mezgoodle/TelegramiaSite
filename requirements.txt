@@ -1,6 +1,6 @@
 ﻿click==8.1.2
 colorama==0.4.5
-ghp-import==2.0.2
+ghp-import==2.1.0
 importlib-metadata==4.11.3
 Jinja2==3.1.1
 Markdown==3.3.6
